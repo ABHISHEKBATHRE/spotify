@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+        body{
+            background-color:black;
+            color: white;
+        }
+        .borderradius{
+         border-radius: 5px;
+        }
+        .invert{
+            filter: invert(1);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .home ul li{
+            display: flex;
+            list-style: none;
+            height: 15px;
+            gap:15px;
+             padding-top:14px;
+             font-weight: bold;
+        }
+        .m-1{
+            margin:8px;
+        }
+        .flex{
+            display:flex;
+        }
+        .justify-center{
+            justify-content: center;
+        }
+        .items-center
+        {
+            align-items:center;
+        }
+        .left{
+            width:25vw;
+        }
+        .right{
+            width:75vw;
+        }
+        .gray{
+            background-color:#242424;
+        }
+        
+        .p-1{
+            padding: 10px;
+        }
+        .heading{
+            display: flex;
+            align-items: center;
+            font-size:13px;
+            gap:10px;
+        }
+        .heading img{
+            width: 25px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container flex">
+    <div class="left">
+        <div class="home gray borderradius m-1 p-1">
+    <div class="spologo invert"><img src="logo.svg" alt=""></div>
+ <ul>
+<li><img src="home.svg " class="invert" alt="home">Home</li>
+<li><img src="search.svg" class="invert"  alt="search">Search</li>
+ </ul>
+        </div>
+        <div class="library gray borderradius m-1 p-1">
+         <div class="heading">
+            <img src="playlist.svg" class="invert" alt="playlist">
+            <h2>Your Library</h2>
+         </div>
+        </div>
+    </div>
+    <div class="right"></div>
+
+   </div>
+</body>
+</html>
