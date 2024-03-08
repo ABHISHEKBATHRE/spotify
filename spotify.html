@@ -10,6 +10,12 @@
             background-color:black;
             color: white;
         }
+        .black{
+            background-color:black;
+        }
+        .spologo{
+        padding-bottom: 1em;
+        }
         .borderradius{
          border-radius: 5px;
         }
@@ -22,12 +28,27 @@
             font-family: 'Roboto', sans-serif;
         }
         .home ul li{
+        padding-bottom: 1em;
+        }
+        .home ul li{
             display: flex;
             list-style: none;
             height: 15px;
             gap:15px;
              padding-top:14px;
-             font-weight: bold;
+             font-size: 1.5em;
+             font-weight: 700;
+        }
+        .home{
+            min-height: 20vh;
+            padding-top: 2em;
+          padding-left: 2em;
+        }
+        .home img{
+            height:3vh;
+        }
+        .point{
+        cursor: pointer;
         }
         .m-1{
             margin:8px;
@@ -49,42 +70,328 @@
             width:75vw;
         }
         .gray{
-            background-color:#242424;
+            background-color:#101010;
         }
-        
+        .graydark{
+            background-color: #242424;
+        }
         .p-1{
             padding: 10px;
         }
+        .library{
+            min-height: 73vh;
+        }
         .heading{
             display: flex;
-            align-items: center;
-            font-size:13px;
-            gap:10px;
+            font-size:16px;
+            color:rgb(255,255,255);
+            opacity:0.7;
+            justify-content:space-between;
+            
         }
         .heading img{
-            width: 25px;
+            width: 35px;
+            margin-top:-5px;
         }
+        .he1{
+            gap:10px;
+        }
+        .library .box1{
+          display: flex;
+          flex-direction: column;
+          gap:20px;
+          padding: 20px;
+        }
+        .box1 button{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 9999px;
+    width: 100px;
+        }
+        .box2{
+            margin-top:20px;
+        }
+        .library .box2{
+          display: flex;
+          flex-direction: column;
+          gap:20px;
+          padding: 20px;
+        }
+        .box2 button{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 9999px;
+    width: 100px;
+        }
+        .box{
+            overflow-y:scroll;
+           overflow-x:hidden;
+            max-height: 25vh;
+        }
+        footer{
+          padding-top: 4em;
+          padding-left: 2em;
+          display: flex;
+          flex-direction: column;
+          gap:20px;
+          opacity:0.7;
+        }
+        .f1{
+            gap:20px;
+
+        }
+        .f2{
+            gap:20px;
+        }
+        .right{
+        margin-top:10px;
+        margin-bottom: 10px;
+        position: relative;
+        }
+        header{
+            height: 9vh;
+        }
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.b1{
+    color: rgb(167, 167, 167);
+    font-size: 25px;
+    border: 2px solid #101010;
+ padding-right: 20px;  
+}
+.b1:hover{
+    color: aliceblue;
+    font-size: 1.7rem;
+}
+.b2{
+    font-size: 25px;
+    height:60px;
+    width: 150px;
+    border-radius: 30px;
+}
+.spotifyplaylist{
+    padding: 16px 30px;
+    max-height: 80vh;
+        overflow-y: scroll;
+}
+.card{
+   position: relative;
+    padding:20px;
+    width:200px;
+    height:300px;
+    border-radius: 10px;
+overflow: hidden;
+}
+.card>*{
+    padding-top: 10px;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.card p{
+    color: rgb(179, 179, 179);
+}
+.cardcontainer{
+    display: flex;
+    gap:60px;
+    margin:10px;
+    flex-wrap: wrap;
+}
+.rightfooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.rightfooter p{
+    color: white;
+    opacity:0.7;
+}
+.playbutton{
+    height: 70px;
+    position: absolute;
+    left: 56px;
+    top:146px;
+}
+.playbar{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(139,193, 139);
+    left: 0px;
+    padding: 12px;
+    height: 40px;
+width: 98.5%
+}
+.songbutton{
+    position: absolute;
+    top:20px;
+    left: 45%;
+}
+.songbutton img{
+    padding:0px 20px;
+}
     </style>
+    <link rel="stylesheet" href="utility.css">
 </head>
 <body>
    <div class="container flex">
     <div class="left">
-        <div class="home gray borderradius m-1 p-1">
+        <div class="home gray borderradius m-1">
     <div class="spologo invert"><img src="logo.svg" alt=""></div>
  <ul>
 <li><img src="home.svg " class="invert" alt="home">Home</li>
 <li><img src="search.svg" class="invert"  alt="search">Search</li>
  </ul>
         </div>
-        <div class="library gray borderradius m-1 p-1">
-         <div class="heading">
-            <img src="playlist.svg" class="invert" alt="playlist">
-            <h2>Your Library</h2>
-         </div>
-        </div>
+        <div
+         class="library gray borderradius m-1 p-1">
+         <div class="heading p-1">
+            <div class="he1 flex"><img src="playlist.svg" class="invert" alt="playlist">
+                <h2>Your Library</h2>
+            </div>
+            <div class="he2">
+                <img class="invert" src="plus.svg" alt="err">
+            </div>
+</div>
+div.songcard
+<!-- <div class="box">
+<div class="box1 graydark borderradius">
+  <h2>Create your first playlist</h2>
+  <h3>It's easy, we'll help you</h3>
+  <button>Create playlist</button>
+</div>
+<div class="box2 graydark borderradius">
+    <h2>Let's find some podcasts to follow</h2>
+    <h3>We'll keep you updated on new episodes</h3>
+    <button>Browse podcasts</button> 
+</div>
+</div> -->
+<footer>
+    <div class="f1 flex">
+       <div class="f1a point">
+        Legal
+       </div>
+       <div class="f1b point">
+        Safety & Privacy Center
+       </div>
+       <div class="f1c point">
+       Privacy
+       </div>
     </div>
-    <div class="right"></div>
+    <div class="f2 flex">
+        <div class="f2a point">
+            Cookies
+        </div>
+        <div class="f2b point">
+            About Ads
+        </div>
+        <div class="f2c point">
+            Accessibility
+        </div>
+     </div>
+     <div class="f3">
+        Cookies
+     </div>
+</footer>
+        </div>
 
+    </div>
+    <div class="right graydark borderradius">
+    <header class="gray borderradius">
+        <nav>
+            <div class="arrow">
+                <img class="invert" src="arrow-left.svg" alt="">
+                <img class="invert" src="arrow-right.svg" alt="">
+            </div>
+            <div class="button">
+             <button class="b1 gray">
+                Sign up
+             </button>
+             <button class="b2">
+                Log in
+             </button>
+            </div>
+        </nav>
+    </header>
+<div class="spotifyplaylist">
+    <h1>Spotify Playlist</h1>
+    <div class="cardcontainer">
+<div class="card gray">
+
+<img src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
+<h3>Dinner with Friends</h3>
+<p>The perfect soundtrack to those long nights over dinner</p>
+</div>
+<div class="card gray">
+
+    <img src="https://i.scdn.co/image/ab67706f00000002cef8ac8b3a702dfba2ae85a9" alt="">
+    <h3>Today’s Top Hits</h3>
+    <p>Dua Lipa is on top of the Hottest 50!</p>
+    </div>
+    <div class="card gray">
+        <img src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d" alt="">
+        <h3>Chillout Lounge</h3>
+        <p>Just lean back and enjoy relaxed beats.</p>
+        </div>
+        <div class="card gray">
+        
+            <img src="https://i.scdn.co/image/ab67706f00000002f4d83a6cb7f51f6d9f6717de" alt="">
+            <h3>Chill Hits</h3>
+            <p>Kick back to the best new and recent chill hits.</p>
+            </div>
+            <div class="card gray">
+            
+                <img src="https://i.scdn.co/image/ab67706f0000000278b4745cb9ce8ffe32daaf7e" alt="">
+                <h3>Rock Classics</h3> 
+                <p>Rock legends & epic songs that continue to inspire generations. Cover: Foo Fighters</p>
+                </div>
+                <div class="card gray">
+                
+                    <img src="https://i.scdn.co/image/ab67706f0000000231ca8abcbff3f5a3eb1fd339" alt="">
+                    <h3>Stress Relief</h3> 
+                    <p>Calm your mind from anxiety with gentle piano and ambient music.</p>
+                    </div>
+                    <div class="card gray">
+                    
+                        <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
+                        <h3>lofi beats</h3> 
+                        <p>chill beats, lofi vibes, new tracks every week...</p>
+                        </div>
+            </div>
+            <div class="playbar">
+                <div class="songbutton">
+                    <img src="previous.svg" alt="">
+                    <img src="play.svg" alt="">
+                    <img src="next.svg" alt="">
+                </div>
+            </div>
+            <!-- <div class="rightfooter">
+           <h1 >Company</h1>
+           <h1>Communities</h1>
+           <h1>Useful links</h1>
+           <p>About</p>
+           <p>For Artists</p>
+           <p>Support</p>
+           <p>Jobs</p>
+           <p>Developers</p>
+           <p>Free Mobile App</p>
+           <p>For the Record</p>
+           <p>Advertising</p>
+           <p></p>
+           <p></p>
+           <p>Investors</p>
+           <p></p>
+           <p></p>
+           <p>Vendors</p>
+            </div> -->
+</div>
+</div>
    </div>
+   <script src="script.js"></script>
 </body>
 </html>
